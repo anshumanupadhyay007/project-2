@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides">
+                <!-- Image placeholders with captions -->
+                <div class="slide">
+                    <img src="http://wallpapercave.com/wp/5bDgwLV.jpg" alt="Machu Picchu">
+                  <div class="caption">waterfall</div>
+                    <div class="caption"></div>
+                </div>
+                <div class="slide">
+                    <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Background-Beautiful-Nature-Images-HD.jpg" alt="Image 2">
+                    <div class="caption">lanscape of a blooming tree</div>
+                </div>
+                <div class="slide">
+                    <img src="http://2.bp.blogspot.com/-GtJLIy5RVzo/UDFHkUK2ebI/AAAAAAAAAhw/vyQEQj4Zl8o/s1600/Best+Nature+hd+Wallpaper+2.jpg" alt="Image 3">
+                    <div class="caption">a road to heaven</div>
+                </div>
+                
+                <div class="slide">
+                    <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Photos-Download-Desktop-HD-Nature-Wallpapers.jpg" alt="Image 4">
+                    <div class="caption">mountains</div>
+            </div>  
+            </div>
+            <!-- Navigation controls -->
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+            <!-- Thumbnail Navigation -->
+            <div class="thumbnails">
+                <img src="http://wallpapercave.com/wp/5bDgwLV.jpg" alt="Thumbnail 1" onclick="currentSlide(0)">
+                <img src="http://2.bp.blogspot.com/-GtJLIy5RVzo/UDFHkUK2ebI/AAAAAAAAAhw/vyQEQj4Zl8o/s1600/Best+Nature+hd+Wallpaper+2.jpg" alt="Thumbnail 2" onclick="currentSlide(1)">
+                <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Background-Beautiful-Nature-Images-HD.jpg" alt="Thumbnail 3" onclick="currentSlide(2)">
+                   <img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Photos-Download-Desktop-HD-Nature-Wallpapers.jpg"
+             alt="Thumbnail 4" onclick="currentSlide(4)">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
